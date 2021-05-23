@@ -479,3 +479,88 @@
 #         print(line[x * n: x * n + n])
 # print_5xn("아이엠어보이유알어", 3)
 
+# def calc_monthly_salary(salary):
+#     month = int(salary / 12)
+#     return month
+# print(calc_monthly_salary(100000000))
+
+# def make_url(string) :
+#     url = "www." + string + ".com"
+#     return url
+# print(make_url("naver"))
+
+# def pickup_even(items):
+#     result = []
+#     for item in items:
+#         if item % 2 == 0:
+#             result.append(item)
+#     return result
+
+# re = pickup_even([3, 4, 5, 6, 7, 8])
+
+# print(re)
+
+# def convert_int(str):
+#     return int(str.replace(",", ""))
+
+# print(convert_int("1,234,567"))
+
+# now = datetime.datetime.now()
+# print(now, type(now))
+
+# for day in range(5, 0, -1):
+#     delta = datetime.timedelta(days=day)
+#     date = now - delta
+#     print(date)
+# import datetime
+# day = "2020-05-04"
+# ret = datetime.datetime.strptime(day, "%Y-%m-%d")
+# print(ret, type(ret))
+# import time
+# import datetime
+
+# while True:
+#     now = datetime.datetime.now()
+#     print(now)
+
+# class Human:
+#     def __init__(self, name, age, sex):
+#         self.name = name
+#         self.age = age
+#         self.sex = sex
+#     def who(self):
+#         print(self.name)
+#         print(self.age)
+#         print(self.sex)
+# areum = Human("아름", 25, "여자")
+# areum.who()
+
+# class Human:
+#     def __init__(self, name, age, sex):
+#         self.name = name
+#         self.age = age
+#         self.sex = sex
+
+#     def __del__(self):
+#         print("나의 죽음을 알리지마라")
+
+#     def who(self):
+#         print("이름: {} 나이: {} 성별: {}".format(self.name, self.age, self.sex))
+
+#     def setInfo(self, name, age, sex):
+#         self.name = name
+#         self.age = age
+#         self.sex = sex
+
+# areum = Human("아름", 25, "여자")
+# del(areum)
+
+class Stock:
+    def __init__(self, name, code):
+        self.name = name
+        self.code = code
+    def set_name(self, name):
+        self.name = name
+stock = Stock(None, None)
+stock.set_name("삼성전자")
+print(stock.name)
