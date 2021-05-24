@@ -555,12 +555,68 @@
 # areum = Human("아름", 25, "여자")
 # del(areum)
 
-class Stock:
-    def __init__(self, name, code):
-        self.name = name
-        self.code = code
-    def set_name(self, name):
-        self.name = name
-stock = Stock(None, None)
-stock.set_name("삼성전자")
-print(stock.name)
+# class Stock:
+#     def __init__(self, name, code):
+#         self.name = name
+#         self.code = code
+#     def set_name(self, name):
+#         self.name = name
+# stock = Stock(None, None)
+# stock.set_name("삼성전자")
+# print(stock.name)
+
+# import random
+
+# class Account:
+
+#     account_count = 0
+
+#     def __init__(self, name, balance):
+#         self.name = name
+#         self.balance = balance
+#         self.bank = "SC은행"
+#         num1 = random.randint(0, 999)
+#         num2 = random.randint(0, 99)
+#         num3 = random.randint(0, 999999)
+
+#         num1 = str(num1).zfill(3)
+#         num2 = str(num2).zfill(2)
+#         num3 = str(num3).zfill(6)
+#         self.account_number = num1 + '-' + num2 + '-' + num3
+
+#         Account.account_count += 1
+    
+#     @classmethod
+#     def get_account_num(cls):
+#         print(cls.account_count)
+# kim = Account("김민수", 100)
+# print(kim.name)
+# print(kim.balance)
+# print(kim.bank)
+# print(kim.account_number)
+# print(Account.account_count)
+# kim.get_account_num()
+
+# class 차:
+#     def __init__(self, 바퀴, 가격):
+#         self.바퀴 = 바퀴
+#         self.가격 = 가격
+# class 자전차(차):
+#     def __init__(self, 바퀴, 가격):
+#         self.바퀴 = 바퀴
+#         self.가격 = 가격
+    
+# bicycle = 자전차(2, 100)
+# print(bicycle.가격)
+
+class 부모:
+    def 호출(self):
+        print("부모호출")
+
+class 자식(부모):
+    def 호출(self):
+        print("자식호출")
+
+
+나 = 자식()
+나.호출()
